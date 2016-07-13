@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/state/init.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">js/state/</a> init.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>10/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>6/6</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict'
+import _ from 'lodash'<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+&nbsp;
+const randomHp = () =&gt; _.random(5,10)
+&nbsp;
+const initial_state = {
+  game_started: false,
+  portions: [
+    {name: "Mind", id: 1, hp: randomHp(), doubts_no: 1, is_hero_present: true, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {name: "Heart", id: 2, hp: randomHp(), doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {name: "Spirit", id: 3, hp: randomHp(), doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {name: "Body", id: 4, hp: randomHp(), doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false}
+  ],
+  roll: [
+    {id: 1, side: 0, rollable: true, usable: true}, {id: 2, side: 0, rollable: true, usable: true}, 
+    {id: 3, side: 0, rollable: true, usable: true}, {id: 4, side: 0, rollable: true, usable: true}, 
+    {id: 5, side: 0, rollable: true, usable: true}, {id: 6, side: 0, rollable: true, usable: true}
+  ],
+  rolls_left: 3,
+  did_this_turn: {moved: false, added_hp: false, removed_doubts: false, fed: false},
+  turn: 1,
+  stats: {}
+}
+&nbsp;
+const fake_state = {
+  game_started: false,
+  portions: [
+    {id: 1, hp: 0, doubts_no: 1, is_hero_present: true, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {id: 2, hp: 0, doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {id: 3, hp: 0, doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false},
+    {id: 4, hp: 0, doubts_no: 1, is_hero_present: false, feed_level: 0, moveable: false, hpable: false, doubtable: false, feedable: false}
+  ],
+  roll: [
+    {id: 1, side: 2, rollable: true, usable: true}, {id: 2, side: 2, rollable: true, usable: true}, 
+    {id: 3, side: 0, rollable: true, usable: true}, {id: 4, side: 0, rollable: true, usable: true}, 
+    {id: 5, side: 0, rollable: true, usable: true}, {id: 6, side: 0, rollable: true, usable: true}
+  ],
+  rolls_left: 3,
+  did_this_turn: {moved: false, added_hp: false, removed_doubts: false, fed: false},
+  turn: 1,
+  stats: {}
+}
+&nbsp;
+// export default initial_state
+export default {initial_state, fake_state}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jul 13 2016 13:28:09 GMT+0100 (BST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
