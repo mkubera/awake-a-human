@@ -1,0 +1,288 @@
+@import 'require/all.styl'
+@import 'comps/*.styl'
+@import 'nib'
+@import 'rupture'
+
+
+*
+  padding 0
+  margin 0
+
+html
+  font-size 62.5%
+
+body
+  font-size 1.5rem
+
+img
+  max-width 100%
+  vertical-align middle
+
+a
+  outline 0
+  text-decoration none
+
+.gamescreen
+  colors(#fff, #222)
+  display flex
+  flex-direction column
+
+.game-wrap
+  sizes(100%, 100vh)
+  background-color gentleblue
+  display flex
+  justify-content center
+  align-items center  
+
+.game
+  sizes(90rem, 40rem)
+  margin-bottom 5rem
+  border 1rem solid #444
+  background-color #fff
+  font-family 'codepro', sans-serif
+  position relative
+  display flex
+  flex-direction column
+  align-items center
+  
+.startGame
+  sizes(100%)
+  colors(rgba(0, 0, 0, .6), #fff)
+  absolute left 0 top 0
+  z-index 999
+  display flex
+  justify-content center
+  align-items center
+  > div
+    padding 4rem
+    colors(mandarine, #fff)
+    font-weight bold
+    font-size 2rem
+    cursor pointer
+    &:hover
+      colors(lightmandarine, #fff)
+
+.top
+  sizes(100%, 4rem)
+  border-bottom .1rem solid #444
+  colors(#222, #fff)
+
+.portions-wrap
+  sizes(100%, 24rem)
+  background-color #F9F7EF
+  display flex
+  justify-content center
+  align-items center
+  
+.portions
+  sizes(95%, 100%)
+  display flex
+  justify-content space-around
+  align-items center
+
+.portion
+  sizes(20rem, 18rem)
+  display flex
+  align-items center
+  
+.portion-Mind
+  background-color rgba(120, 146, 193, .5) //#7892C1 lightnightblue
+.portion-Heart
+  background-color rgba(207, 61, 51, .5) ;//#CF3D33 bloodred
+.portion-Spirit
+  background-color rgba(171, 230, 129, .5) //#ABE681 soulgreen
+.portion-Body
+  background-color rgba(157, 134, 102, .5) //#9D8666 //rgba(251, 173, 183, .5) //#FBADB7
+  
+.portion-left
+  sizes(16rem, 100%)
+  border .2rem solid #444
+  display flex
+  flex-direction column
+
+.portion-left-header
+  sizes(100%, 3rem)
+  colors(#444, #fff)
+  font-weight bold
+  display flex
+  justify-content center
+  align-items center
+
+.portion-left-top
+  sizes(100%, 12rem)
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  
+.portion-left-bottom
+  sizes(100%, 3rem)
+  colors(#444, #fff)
+  display flex
+  justify-content flex-end
+  align-items center
+
+.portion-left-bottom-wrap
+  margin-right 1rem
+  
+.hp-counter
+  color gentlered
+  font-weight bold
+  
+.portion-right
+  sizes(4rem, 12rem)
+  border .1rem solid #444
+  border-left 0
+  border-top-right-radius .5rem
+  border-bottom-right-radius .5rem
+  colors(nightblue, #fff)
+  font-size 1.3rem
+  text-align center
+  display flex
+  justify-content center
+  align-items center
+
+.rollsleft
+  sizes(100%, 2rem)
+  background-color #F9F7EF
+
+.rollarea
+  sizes(100%, 10rem)
+  background-color #222
+  border-top .1rem solid #444
+  display flex
+  
+.rollarea-dice
+  sizes(75%, 100%)
+  padding 0 2rem
+  display flex
+  justify-content space-around
+  align-items center
+  
+.rollarea-die
+  sizes(7rem)
+  border .3rem solid sunorange
+  border-radius .5rem
+  cursor pointer
+  text-align center  //delete once image is added
+  line-height 7rem   //delete -------" "--------
+  
+.rollarea-btns
+  sizes(25%, 100%)
+  border-left .1rem solid #444
+  display flex
+  flex-direction column
+  
+.rollarea-rollAgain,
+.rollarea-finishTurn
+  sizes(100%, 50%)
+  // colors(#fff, #444)
+  colors(#222, #fff)
+  cursor pointer
+  display flex
+  justify-content center
+  align-items center
+  
+.rollarea-rollAgain
+  &:hover
+    colors(lightblue, #000)
+  
+.rollarea-finishTurn
+  border-top .1rem solid #444
+  &:hover
+    colors(skyblue, #000)
+
+
+
+.inactive 
+  color #000
+  background-color #999
+  // color #999
+  // text-decoration line-through
+  cursor default
+  &:hover
+    background-color #999
+
+.hero
+  padding .4rem
+  border-left .4rem solid mandarine
+  margin-bottom .6rem
+  colors(lightmandarine, #000)    
+
+.move, 
+.addhp,
+.doubt,
+.feed, 
+.hidden 
+  display none
+  
+.moveable, 
+.hpable,
+.doubtable,
+.feedable 
+  display inline-block
+  cursor pointer
+  
+.move
+  padding .2rem
+  border-radius .5rem
+  margin .4rem 0
+  colors(lightmandarine, #111)
+  // colors(#ddd, #111)
+  &:hover
+    colors(mandarine, #111)
+    // colors(#fff, #111)
+  
+.hpable 
+  padding .0rem .2rem
+  border-radius .5rem
+  margin-right .4rem
+  colors(bloodred, #fff)
+  font-weight bold
+  font-size 1.8rem
+  &:hover
+    colors(gentlered, #fff)
+    
+.doubtable
+  padding .0rem .4rem
+  border-radius .5rem
+  margin-right .4rem
+  colors(#555, #fff)
+  font-weight bold
+  font-size 1.8rem
+  &:hover
+    colors(#777, #fff)
+  
+.feedable 
+  padding .0rem .2rem
+  border-radius .5rem
+  margin-bottom .4rem
+  colors(lightblue, #fff)
+  font-weight bold
+  font-size 1.8rem
+  &:hover
+    colors(skyblue, #fff)
+
+.dieMove
+  colors(lightmandarine, #000)
+  // colors(#ddd, #000)
+  
+.dieHp
+  colors(bloodred, #fff)
+  
+.dieDoubt
+  colors(#555, #fff)
+  
+.dieFeed
+  colors(lightblue, #fff)
+  
+.rollarea-die--rollable 
+  border .3rem solid #222
+  &:hover
+    border .3rem solid darksunorange
+  
+.rollarea-die--unusable 
+  background-color #999
+  cursor default
+  &:hover
+    background-color #999

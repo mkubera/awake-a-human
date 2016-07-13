@@ -10,7 +10,7 @@ This is a mangy-looking prototype of a little game that I hope will prove to be 
 
 ### Clone
 ```
-$ git clone https://github.com/rainteller/awake-a-human.git
+$ git clone https://github.com/rainteller/awake-a-human.git 
 ```
 
 ### Install
